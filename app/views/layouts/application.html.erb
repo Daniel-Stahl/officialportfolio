@@ -2,26 +2,26 @@
 <html>
 <head>
   <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 	<div class="header">
 		<div class="container">
-			<h1>Daniel Stahl</h1>
-			<div class="nav">
-				<ul>
-					<%= link_to '<li>Welcome</li>'.html_safe, 'welcome' %>
-					<%= link_to '<li>About me</li>'.html_safe, 'aboutme' %>
-					<%= link_to '<li>Projects</li>'.html_safe, 'projects' %>
-					<%= link_to '<li>Blog</li>'.html_safe, 'blog' %>
-					<%= link_to '<li>Contact</li>'.html_safe, 'contact'%>
+			<nav>
+				<ul class="nav pull-right">
+					<li><%= link_to 'Welcome'.html_safe, 'welcome' %></li>
+					<li><%= link_to 'About me'.html_safe, 'aboutme' %></li>
+					<li><%= link_to 'Projects'.html_safe, 'projects' %></li>
+					<li><%= link_to 'Blog'.html_safe, 'blog' %></li>
+					<li><%= link_to 'Contact'.html_safe, 'contact'%></li>
 				</ul>
-			</div>
+				<h1>Daniel Stahl</h1>
+			</nav>
 		</div>
 	</div>
 
@@ -34,7 +34,7 @@
 				<li>Snapchat</li>
 				<li>Twitter</li>
 			</ul>
-			<p>Made with love</p>
+			<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></p>
 		</div>
 	</div>
 </body>
