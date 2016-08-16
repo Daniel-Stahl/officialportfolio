@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+	$('.glyphicon-option-vertical').click(function() {
+		console.log("Hello");
+		$('#sidemenu').toggleClass('visible');
+	});
+});
