@@ -64,6 +64,15 @@
 	font-size: 24px;
 }
 
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.jumbotron .container {
+		top: 20%;
+	}
+}
+
 /********** FOOTER SECTION *********/
 
 .footer .glyphicon {
