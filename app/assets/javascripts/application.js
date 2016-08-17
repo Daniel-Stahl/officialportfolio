@@ -14,27 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-var main = function() {
-  $('.icon-menu').click(function() {
-    $('#sidemenu').animate({
-      right: "0px"
-    }, 200);
 
-    $('body').animate({
-      right: "285px"
-    }, 200);
-  });
-
-  $('.icon-close').click(function() {
-    $('#sidemenu').animate({
-      right: "-285px"
-    }, 200);
-
-    $('body').animate({
-      right: "0px"
-    }, 200);
-  });
-};
-
-
-$(document).ready(main);
+$(document).ready(function() {
+	$(".button-collapse").sideNav();
+});

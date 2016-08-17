@@ -13,110 +13,18 @@
  *= require_tree .
  *= require_self
  */
+html, body {
+	height: 100%;
+  	margin: 0;
+  	padding: 0;
+}
+
 body {
-  right: 0;
-  margin: 0;
-  position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
- /********** NAV SECTION *********/
- .nav>li {
- 	float: left;
- }
-
- .nav>li>a {
- 	color: inherit;
- }
-
- .nav>li>a:hover {
- 	background-color: transparent;
- 	border-bottom: 1px solid #FF6600;
- }
-
- .icon-menu {
- 	display: none;
- }
-
-#sidemenu {
-	color: red;
-	background: #FFF;
-	right: -285px;  /* start off behind the scenes */
-  	height: 100%;
-  	position: fixed;
-  	width: 285px;
-  	top: 0;
+main {
+    flex: 1 0 auto;
 }
-
- @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	.nav {
-		display: none;
-	}
-
-	.icon-menu {
-		font-size: 36px;
-		display: block;
-	}
-
-	.icon-close {
-		font-size: 36px;
-		display: block;
-		margin-top: 20px;
-	}
-}
-
-/********** JUMBOTRON SECTION *********/
-
- .jumbotron {
- 	background: url('https://lh3.googleusercontent.com/g0yKF4GViqskNokh5LvjaHMrijTSLhZNgsVyMu-O3Dyzuj7UEFjmfCleOQvZF-t4xRquB5eOARUEHjJeDW9n554ru9bJ3TvpkOQl7myyqSI5oA7UkFAJegIJDu0D2SoB5RdAulxD23q92bjs5m6xMY660_BdyA17EGpAMecu5vlVtI43RqfANA_kZufq7u4q8wvMHKluzYsdXDEU1cPoteli1BdQ0T1zMbrhdKkM0zSMKQUZEi8QgqxbupQu3e6sjr9hRWbBTo1obVEHti9zN82UU1OD7nHFW6wqJduPixStr5IH7Iwoggo2-DcDG31d-AXo-W2ALHGK_ZjyzpWkM_tvp805kBdhQaTZBDkCbpc2H_umzYBHdWK_sRfdvI_zYZElsrhvovddYGg5jpxHrm4rkqQoBGy-_pgC70_tCfqSkrBOjI2PQsA0cNp-WGl-r99FqWZlVz7X4qAF8vqeKFMR7h_ATgbMq9al6lgXzUkfHI3DV_1iTyYGq5EJuNJXps6SlG5ufZcorBmqbX7sEePQGPGm0fK2BikSCqOOdYzynxNJjTZKGbC8voH5wBqD3Mk98uTPRwSuA8hwLy1kuvmzcKBdRzU=w1328-h887-no') no-repeat center;
-	background-size: cover;
-	height: 100vh;
- }
-
-.jumbotron .container {
-	position: relative;
-	top: 50%;
-}
-
- .jumbotron h3 {
-	font-weight: 400;
-	font-size: 36px;
-	color: #FF6600;
- }
-
- .jumbotron a {
- 	color: #FF6600;
- 	border: 1px solid #FF6600;
- }
-
- .jumbotron a:hover {
-	color: #FFF;
-	background-color: #FF6600;
- }
-
-.jumbotron a:focus {
-	color: #FF6600;
-}
-
-.jumbotron .btn {
-	font-size: 24px;
-}
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-	.jumbotron .container {
-		top: 20%;
-	}
-}
-
-/********** FOOTER SECTION *********/
-
-.footer .glyphicon {
-	color: #CA0401;
-}
-
-
