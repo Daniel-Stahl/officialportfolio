@@ -13,6 +13,12 @@
  *= require_tree .
  *= require_self
  */
+body {
+  right: 0;
+  margin: 0;
+  position: relative;
+}
+
  /********** NAV SECTION *********/
  .nav>li {
  	float: left;
@@ -27,25 +33,18 @@
  	border-bottom: 1px solid #FF6600;
  }
 
- .glyphicon-option-vertical {
+ .icon-menu {
  	display: none;
  }
 
 #sidemenu {
+	color: red;
 	background: #FFF;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	right: -100%;
-	top: 0px;
-	transition: right 0.5s linear;
-	z-index: 1;
-}
-
-#sidemenu.visible {
-	right: 0px;
-	transition: right 0.5s linear;
+	right: -285px;  /* start off behind the scenes */
+  	height: 100%;
+  	position: fixed;
+  	width: 285px;
+  	top: 0;
 }
 
  @media only screen 
@@ -56,9 +55,15 @@
 		display: none;
 	}
 
-	.glyphicon-option-vertical {
+	.icon-menu {
 		font-size: 36px;
 		display: block;
+	}
+
+	.icon-close {
+		font-size: 36px;
+		display: block;
+		margin-top: 20px;
 	}
 }
 
