@@ -35,7 +35,7 @@ nav {
 	background-color: #fff;
 }
 
-nav .brand-logo {
+nav .brand-logo, nav a {
 	color: #3b3b3b;
 }
 
@@ -56,6 +56,19 @@ nav ul a:hover {
 
 .btn, .btn-large {
 	background-color: #ff6600;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.welcome-content {
+		margin-top: 15rem;
+	}
+
+	.welcome-content h3 {
+		font-size: 2rem;
+	}
 }
 
 /********** FOOTER **********/
