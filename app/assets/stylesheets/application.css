@@ -58,13 +58,12 @@ nav ul a:hover {
 	background-color: #ff6600;
 }
 
-
 /********** FOOTER **********/
 footer.page-footer {
 	margin-top: 0px;
 	padding-top: 0px;
 	background-color: transparent;
-	color: color: #3b3b3b;
+	color: #3b3b3b;
 	text-align: center;
 }
 
