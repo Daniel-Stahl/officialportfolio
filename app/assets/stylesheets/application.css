@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 body {
     display: flex;
     min-height: 100vh;
@@ -22,3 +23,50 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+.bgimg {
+	background: url("https://static.pexels.com/photos/97260/pexels-photo-97260.jpeg") no-repeat center center;
+    background-size: cover;
+}
+
+/********** NAV MENU **********/
+
+nav {
+	background-color: #fff;
+}
+
+nav .brand-logo {
+	color: #3b3b3b;
+}
+
+nav ul a {
+	color: #3b3b3b;
+}
+
+nav ul a:hover {
+	background-color: transparent;
+	border-bottom: 2px #ff6600 solid;
+}
+
+/********** WELCOME PAGE **********/
+.welcome-content {
+	margin-top: 22rem;
+	color: #ff6600;
+}
+
+.btn, .btn-large {
+	background-color: #ff6600;
+}
+
+
+/********** FOOTER **********/
+footer.page-footer {
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: transparent;
+	color: color: #3b3b3b;
+	text-align: center;
+}
+
+
+/*#3b3b3b : #d56318*/
