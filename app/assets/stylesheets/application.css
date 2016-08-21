@@ -71,6 +71,11 @@ nav ul a:hover {
 	}
 }
 
+/********** CONTACT PAGE **********/
+.hidden {
+	display: none;
+}
+
 /********** FOOTER **********/
 footer.page-footer {
 	margin-top: 0px;
