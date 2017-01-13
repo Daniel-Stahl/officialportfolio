@@ -85,5 +85,10 @@ footer.page-footer {
 	text-align: center;
 }
 
+footer.page-footer p i {
+	font-size: medium;
+	color: red;
+}
+
 
 /*#3b3b3b : #d56318*/

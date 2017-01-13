@@ -19,15 +19,19 @@
 		    	<li><%= link_to 'Welcome'.html_safe, welcome_path %></li>
 				<li><%= link_to 'About me'.html_safe, aboutme_path %></li>
 				<li><%= link_to 'Projects'.html_safe, projects_path %></li>
-				<li><%= link_to 'Blog'.html_safe, 'https://medium.com/@danielstahl' %></li>
+				<!-- <li><%= link_to 'Blog'.html_safe, 'https://medium.com/@danielstahl' %></li> -->
 				<li><%= link_to 'Contact'.html_safe, new_contact_path %></li>
+				<li><%= link_to 'Twitter'.html_safe, 'https://twitter.com/LittleJazzHands', target: :_blank %></li>
+				<li><%= link_to 'Github'.html_safe, 'https://github.com/daniel-stahl', target: :_blank %></li>
 		    </ul>
 		    <ul class="side-nav" id="mobile-demo">
 		        <li><%= link_to 'Welcome'.html_safe, welcome_path %></li>
 				<li><%= link_to 'About me'.html_safe, aboutme_path %></li>
 				<li><%= link_to 'Projects'.html_safe, projects_path %></li>
-				<li><%= link_to 'Blog'.html_safe, 'https://medium.com/@danielstahl' %></li>
+				<!-- <li><%= link_to 'Blog'.html_safe, 'https://medium.com/@danielstahl', target: :_blank %></li> -->
 				<li><%= link_to 'Contact'.html_safe, new_contact_path %></li>
+				<li><%= link_to 'Twitter'.html_safe, 'https://twitter.com/LittleJazzHands', target: :_blank %></li>
+				<li><%= link_to 'Github'.html_safe, 'https://github.com/daniel-stahl', target: :_blank %></li>
 		    </ul>
 	    </div>
   	</nav>
@@ -37,14 +41,7 @@
 	<!-- </main> -->
 
 	<footer class="page-footer">
-		<div class="container">
-			<ul>
-				<li>Github</li>
-				<li>Snapchat</li>
-				<li>Twitter</li>
-			</ul>
-			<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></p>
-		</div>
+		<p>Made with <i class="material-icons">favorite</i></p>
 	</footer>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>	
 </body>
